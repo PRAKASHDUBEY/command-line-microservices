@@ -9,11 +9,11 @@ const rl = readline.createInterface({
     const index = await rl.question("");
     rl.close();
     
-    if(index == 1) await require("./subSystem1")();
+    if(index == 1) await require("./order")();
         
-    else if(index == 2) await require("./subSystem2")();
+    else if(index == 2) await require("./cook")();
 
-    else if(index == 3) await require("./subSystem3")();
+    else if(index == 3) await require("./serve")();
 
-    else if(index == 4) await require("./subSystem4")();
+    else if(index == 4) await require("./checkout")();
 })();
